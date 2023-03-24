@@ -11,6 +11,8 @@ jobs:
         with:
           tool: zola@0.17.2
       - uses: actions/checkout@v3
+        with:
+          submodules: recursive
       - run: zola build -o "_site"
       - name: Upload Pages Artifact
         id: artifact
