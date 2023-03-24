@@ -1,5 +1,14 @@
 # The URL the site will be built for
-base_url = "https://wtf.allwallet.dev"
+base_url = "/"
+
+theme = "zhuia"
+
+title = "Wallet Test Framework"
+description = "A testing framework for Ethereum wallets."
+
+# Whether to generate a RSS feed automatically
+generate_feed = true
+feed_filename = "rss.xml"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -7,10 +16,75 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+# Built in taxonomies of huia.
+taxonomies = [
+    {name = "tags"},
+    {name = "categories"},
+]
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+# The max-width of the page content
+grid_size = "grid-lg"
+
+# Whether to enable KaTeX or not
+katex = true
+
+# Default author for articles
+author = "Wallet Test Framework"
+
+show_author = true
+show_tags = true
+show_categories = true
+read_more_prompt = "read more"
+read_post_prompt = "read post"
+
+# Menu
+hamburger_menu = true
+
+# Menu items to display. You define a url and the name of the menu item.
+# NOTE: `$BASE_URL/` must be included in the url name.
+main_menu = [
+    {url="/tags/", name="tags"},
+    {url="/categories/", name="categories"},
+    {url="/about", name="about"},
+]
+
+# Footer
+
+# footer_tagline = "Your tagline"
+
+# Social media buttons to display. You define a url and the name of the platform.
+social_links = [
+    {url = "https://discord.gg/uFTHmUcF58", name = "discord"},
+    # {url = "https://twitter.com/gicrisf", name = "twitter"},
+    {url = "https://github.com/wallet-test-framework", name = "github"},
+    # {url = "", name = "instagram"},
+    # {url = "", name = "facebook"},
+]
+
+
+[extra.sidebar]
+# Enable/Disable sidebar
+active=true
+
+# Include a text snippet in the sidebar
+# You can format it with HTML
+# text_snippet="Some <strong>HTML</strong> here! It's <mark>safe</mark>!"
+
+# Author card
+author_bio = "A testing framework for Ethereum wallets"
+author_avatar = "wtf-logo.svg"
+
+# Include search bar
+# TODO template
+
+# Embed twitter iframe in the sidebar
+
+popular_tags=false
+archive=false
+related_posts=false #TODO

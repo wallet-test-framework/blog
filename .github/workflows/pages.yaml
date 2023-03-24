@@ -1,0 +1,30 @@
+name: GitHub Pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.17.2
+      - uses: actions/checkout@v3
+      - run: zola build -o "_site"
+      - name: Upload Pages Artifact
+        id: artifact
+        uses: actions/upload-pages-artifact@v1
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

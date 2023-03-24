@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   width="512"
+   height="512"
+   enable-background="new 0 0 87.123 100.869"
+   version="1.1"
+   viewBox="0 0 512 512"
+   xml:space="preserve"
+   id="svg478"
+   sodipodi:docname="wtf-logo.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs482" /><sodipodi:namedview
+   id="namedview480"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="1"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="1.5273438"
+   inkscape:cx="257.30945"
+   inkscape:cy="255.99999"
+   inkscape:window-width="1920"
+   inkscape:window-height="1011"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg478" />
+
+
+<rect
+   style="opacity:1;fill:#ffffff;stroke-width:11.0046"
+   id="rect784"
+   width="512"
+   height="512"
+   x="0"
+   y="0" /><g
+   transform="matrix(5.2657 0 0 5.2657 26.619 -38.072)"
+   id="g476"><path
+     d="m52.87 32.971v-18.99h-18.624v18.989l-0.04 0.109-16.816 43.496h52.343zm-1.212 16.754h-19.18l6.156-15.938v-15.417h9.852v15.417l14.853 38.398h-2.955z"
+     fill="#010101"
+     id="path470" /><text
+     x="20.7633"
+     y="97.71273"
+     font-family="'Source Sans Pro'"
+     font-size="26.201px"
+     font-style="italic"
+     stroke-width="1.6376"
+     style="line-height:1.25"
+     xml:space="preserve"
+     id="text474"><tspan
+       x="20.7633"
+       y="97.71273"
+       font-family="'Liberation Mono'"
+       font-style="normal"
+       font-weight="bold"
+       stroke-width="1.6376"
+       id="tspan472">WTF</tspan></text></g></svg>
