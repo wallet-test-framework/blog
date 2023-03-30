@@ -46,3 +46,9 @@ integrate.
    one browser extension and one hardware wallet.
 1. Build automation glue (eg. [WebDriver](https://www.w3.org/TR/webdriver/)) for
    at least one wallet.
+
+### Architecture
+
+#### Overview
+
+![Architecture Diagram](diagram.svg)
