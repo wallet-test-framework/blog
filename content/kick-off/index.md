@@ -36,7 +36,7 @@ integrate.
 
 ### Milestones
 
-1. Reassess [the prototype](https://github.com/gaudren/Wallet-Test-Framework),
+1. Reassess [the prototype](https://github.com/Wallet-Test-Framework/framework),
    and get it into reasonable shape to form the foundation of the framework.
 1. Happy-path coverage of all of the endpoints available in the
    [`execution-apis`](https://ethereum.github.io/execution-apis/api-documentation/)
@@ -52,3 +52,33 @@ integrate.
 #### Overview
 
 ![Architecture Diagram](diagram.svg)
+
+#### Components
+
+##### Proxy
+
+A web server that forwards JSON-RPC requests between the wallet and the
+simulated chain. Necessary because browsers do not allow web pages to listen for
+HTTP or WebSocket connections.
+
+##### Wallet
+
+The software under test. Communicates with the tests using `window.ethereum`,
+and with the simulated chain through the proxy with JSON-RPC.
+
+##### Simulated Chain
+
+An isolated Ethereum-compatible blockchain (like
+[Ganache](https://github.com/trufflesuite/ganache).) The simulated chain
+presents a JSON-RPC interface to the wallet through the proxy.
+
+##### Tests
+Collection of functions that put the simulated chain into a known state, then
+perform some operation with or retrieve some information through the wallet.
+
+##### Glue
+
+Software specific to each wallet that translates conceptual actions (eg. approve
+transaction) into a format that the wallet understands. Initially this will be
+on-screen instructions for the user to follow, but later on the glue could be
+implemented with, for example, WebDriver for browser-based wallets.
