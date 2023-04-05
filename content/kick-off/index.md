@@ -1,8 +1,7 @@
 +++
 title="Kick Off"
 description="Funding acquired, time to get started!"
-date=2023-03-24
-draft=true
+date=2023-04-05
 
 [taxonomies]
 tags = ["Q1", "funding"]
@@ -82,3 +81,13 @@ Software specific to each wallet that translates conceptual actions (eg. approve
 transaction) into a format that the wallet understands. Initially this will be
 on-screen instructions for the user to follow, but later on the glue could be
 implemented with, for example, WebDriver for browser-based wallets.
+
+### What's Next?
+
+You'll start to see some activity in the
+[repository](https://github.com/Wallet-Test-Framework/framework) in the next
+week or so, and perhaps some discussion in
+[#testing](https://discord.gg/buZVvsAsAN).
+
+If you're developing a wallet and want to contribute, please reach out to
+[@gaudren_](https://twitter.com/gaudren_)!
