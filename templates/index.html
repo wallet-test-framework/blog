@@ -1,0 +1,6 @@
+{% extends "zhuia/templates/index.html" %}
+
+{% block css %}
+{{ super() }}
+<link rel="stylesheet" href="{{ get_url(path="/reports.css") }}">
+{% endblock %}

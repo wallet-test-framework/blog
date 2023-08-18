@@ -1,0 +1,48 @@
+.report-holder {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+table.report {
+    border-collapse: collapse;
+    min-width: 100%;
+    width: max-content;
+    caption-side: bottom;
+}
+
+table.report > caption {
+    text-align: left;
+}
+
+table.report td, table.report th {
+    padding: 0 2em;
+}
+
+table.report > thead > tr > th {
+    background-color: #999999;
+    color: white;
+}
+
+table.report tr + tr, table.report > tbody > tr:first-child {
+    border-top: 1px solid white;
+}
+
+table.report tr.platinum {
+    background-color: #e5e4e2;
+}
+
+table.report tr.gold {
+    background-color: #fff600;
+}
+
+table.report tr.silver {
+    background-color: #a9a9a9;
+}
+
+table.report tr.bronze {
+    background-color: #daa520;
+}
+
+table.report tr.garbage {
+    background-color: #999966;
+}
