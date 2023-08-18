@@ -271,6 +271,16 @@ Regardless, we're following up with their team to see what we can do.
 Some of the newer endpoints like `eth_maxPriorityFeePerGas` aren't yet supported
 in all wallets. Expect these tests to start passing as they are implemented.
 
+#### Stalled Tests
+
+[OKX] and [TokenPocket] both failed somewhere around the `eth_getFilterChanges`
+suites, and didn't continue to the rest of the tests. It's likely that they
+would've passed more tests had they continued.
+
+We haven't debugged why the tests stalled. It could be as simple as adding a
+timeout to WTF, or something more involved. We'll be looking into this before
+the next report.
+
 ### Future Plans
 
 We'll continue adding tests, and we'll try to run through this report somewhat
@@ -294,3 +304,5 @@ In the meantime, [join us on Discord](https://allwallet.dev/)!
 [Taho]: https://taho.xyz/
 [Frame]: https://frame.sh/
 [architecture]: ../kick-off/
+[OKX]: https://www.okx.com/web3
+[TokenPocket]: https://www.tokenpocket.pro/en/
