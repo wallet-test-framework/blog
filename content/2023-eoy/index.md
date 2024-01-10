@@ -30,7 +30,7 @@ After some bug fixes and new tests, we migrated from ethers to viem, due to some
 caching issues. We also introduced support for remote controlling wallets over
 WebSockets.
 
-After publishing our first [Test Report](@week-19), we moved full steam into
+After publishing our first [Test Report](@/week-19/index.md), we moved full steam into
 developing automation glue for Coinbase and Taho wallets. We've proven that our
 tests are portable between wallets, and we've reported a handful of issues
 upstream.
