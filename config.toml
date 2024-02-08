@@ -74,7 +74,36 @@ active=true
 
 # Include a text snippet in the sidebar
 # You can format it with HTML
-# text_snippet="Some <strong>HTML</strong> here! It's <mark>safe</mark>!"
+text_snippet="""
+<style>
+.sponsors {
+  list-style: none;
+  text-align: center;
+}
+.sponsors > li {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+.sponsors img {
+  max-width: 64px;
+  max-height: 64px;
+}
+</style>
+<h4>Sponsors</h4>
+<ul class="sponsors">
+    <li>
+        <a title="Brave" href="https://brave.com/">
+            <img alt="Brave Logo" src="/sponsors/brave.svg">
+        </a>
+    </li>
+    <li>
+        <a title="Ethereum Foundation" href="https://esp.ethereum.foundation/">
+            <img alt="Ethereum Logo" src="/sponsors/ef.svg">
+        </a>
+    </li>
+</ul>
+"""
 
 # Author card
 author_bio = "A testing framework for Ethereum wallets"
